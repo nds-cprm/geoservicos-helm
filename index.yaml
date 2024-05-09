@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  geoservicos:
+  - apiVersion: v2
+    created: "2024-05-09T18:18:41.918779853Z"
+    dependencies:
+    - condition: mapserver.enabled
+      name: mapserver
+      repository: https://nds-cprm.github.io/helm-charts/
+      version: 0.1.0
+    - name: mapproxy
+      repository: https://nds-cprm.github.io/helm-charts/
+      version: 0.1.0
+    - condition: couchdb.enabled
+      name: couchdb
+      repository: https://apache.github.io/couchdb-helm/
+      version: 4.5.0
+    description: Stack de serviços de mapas personalizados para o SGB
+    digest: 7ee896182523f5044b798bb6be5c5d28b95b426d94cfd644a07bf8cc0661c2c4
+    icon: https://intranet.sgb.gov.br/publique/media/marketing/logosgb_icone_original_v2.png
+    keywords:
+    - mapserver
+    - mapproxy
+    - couchdb
+    maintainers:
+    - email: carlos.mota@sgb.gov.br
+      name: Carlos Eduardo Mota
+    name: geoservicos
+    type: application
+    urls:
+    - https://github.com/nds-cprm/geoservicos-helm/releases/download/geoservicos-0.1.0/geoservicos-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-05-09T18:18:41.91878894Z"
