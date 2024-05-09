@@ -1,2 +1,2 @@
-# inde-helm
-Helm chart para implementação de uma IDE nos moldes da INDE, com GeoServer e GeoNetwork
+# geoservicos-helm
+Helm chart para implementação de sistema de geoserviços com mapserver e mapproxy
